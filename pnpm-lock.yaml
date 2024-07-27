@@ -11,6 +11,9 @@ dependencies:
   next:
     specifier: 12.0.8
     version: 12.0.8(@babel/core@7.24.9)(react-dom@17.0.2)(react@17.0.2)(webpack@5.93.0)
+  nextjs-google-analytics:
+    specifier: ^2.3.3
+    version: 2.3.3(next@12.0.8)(react@17.0.2)
   nextra:
     specifier: ^2.0.0-beta.5
     version: 2.0.0-beta.5(react@17.0.2)(webpack@5.93.0)
@@ -26,6 +29,9 @@ dependencies:
   rss:
     specifier: ^1.2.2
     version: 1.2.2
+  tslib:
+    specifier: ^2.6.3
+    version: 2.6.3
 
 packages:
 
@@ -2666,6 +2672,18 @@ packages:
       - webpack
     dev: false
 
+  /nextjs-google-analytics@2.3.3(next@12.0.8)(react@17.0.2):
+    resolution: {integrity: sha512-Y6sI6A7wt5dji8hYBnVkOh9LTyImSLFZXx3FpyQgVW7W4b4qEFHjH2u3fhDJsrRZeLlUGM8/RuHD/mhHc2Axfg==}
+    peerDependencies:
+      next: '>=11.0.0'
+      react: '>=17.0.0'
+    dependencies:
+      next: 12.0.8(@babel/core@7.24.9)(react-dom@17.0.2)(react@17.0.2)(webpack@5.93.0)
+      react: 17.0.2
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: false
+
   /nextra-theme-blog@2.0.0-beta.5(next@12.0.8)(react-dom@17.0.2)(react@17.0.2)(tailwindcss@3.4.6):
     resolution: {integrity: sha512-cF3tmaKNxFAXrGQO5725QvUrQPSvnwQzvm7Wl4U5EhLZ9ZBilxk4jS2SOKz1vXR/6mCykJsEcZONEHGupytkeQ==}
     peerDependencies:
@@ -3599,6 +3617,10 @@ packages:
 
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
+    dev: false
+
+  /tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
     dev: false
 
   /unbzip2-stream@1.4.3:
